@@ -1,0 +1,57 @@
+ <!--
+  Generated template for the SigninPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar class="head" transparent>
+    <img src="assets/imgs/signup/chefistan.png" height="76dpi" width="167dpi">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="signinmyView">
+
+  <h2 class="signin">SIGN IN</h2>
+  
+  <!-- email box -->
+  <ion-item class="rounded" margin-bottom="2rem">
+    <img src="assets/imgs/signin/loginface.png" item-right height="15px" width="15px" >
+    <ion-input [(ngModel)]="account.email" class="placeholder" type="email" placeholder="Username" ></ion-input>
+    
+  </ion-item>
+
+  <!-- password box -->
+  <ion-item class="rounded">
+      <ion-input [(ngModel)]="account.password" class="placeholder" type="password" placeholder="Password" ></ion-input>
+      <img src="assets/imgs/signin/lock.png" item-right height="15px" width="15px" >
+  </ion-item>
+
+  <!-- forget password div -->
+  <div class="forgetpass">
+    <a class="aa" href="#">forget password?</a>
+  </div>
+  <!-- OR div -->
+  <div class="or" >
+    <h2>- OR -</h2>
+  </div>
+
+  <!-- alternate login logos -->
+  <div class="logos">
+    <a href="#"> <img src="assets/imgs/signin/facebook.png" width="40px" height="40px" > </a>
+    <a href="#"> <img src="assets/imgs/signin/twitter.png" width="40px" height="40px" margin-left="1rem"> </a>
+    <a href="#"> <img src="assets/imgs/signin/Google.png" width="40px" height="40px" margin-left="1rem"> </a>
+  </div>
+
+  <!-- new user link -->
+  <div class="message">
+    <p>New user? <a (click)="navToReg()"  class="aa">Create your new account</a></p>
+  </div>
+
+  <!-- signin button -->
+  <div class="signincenter">
+    <button ion-button class="signinbutton" (click)="login()">SIGN IN</button>
+  </div>

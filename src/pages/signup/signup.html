@@ -1,0 +1,58 @@
+<ion-header >
+
+  <ion-navbar class="head" transparent>
+    <img src="assets/imgs/signup/chefistan.png" height="76dpi" width="167dpi">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="myView">
+
+  <h2 class="singuph2">CREATE YOUR ACCOUNT</h2>
+
+  <!-- name box -->
+  <ion-item class="rounded2" >
+    <img src="assets/imgs/signup/loginface.png" item-right height="15px" width="15px" >
+    <ion-input [(ngModel)]="profile.Username" class="placeholder" type="text" placeholder="Username" ></ion-input>
+    
+  </ion-item>
+
+  <!-- email box -->
+  <ion-item class="rounded2" >
+    <img src="assets/imgs/signup/mail.png" item-right height="15px" width="15px" >
+    <ion-input [(ngModel)]="account.email" class="placeholder" type="email" placeholder="Email" ></ion-input>
+    
+  </ion-item>
+
+  <!-- password box -->
+  <ion-item class="rounded2" >
+    <img src="assets/imgs/signup/lock.png" item-right height="15px" width="15px" >
+    <ion-input [(ngModel)]="account.password" class="placeholder" type="password" placeholder="Password" ></ion-input>
+    
+  </ion-item>
+
+  <!-- gender box -->
+  <ion-item item-start width="20%" class="rounded2">
+    <ion-label >Gender</ion-label>
+    <img src="assets/imgs/signup/genders.png" item-right height="15px" width="15px" >
+    <ion-select   interface="popover" [(ngModel)]="profile.gender">
+    <ion-option  value="f">Female</ion-option>
+    <ion-option  value="m">Male</ion-option>
+    </ion-select>
+    </ion-item>
+
+    <!-- date of birth box -->
+  <ion-item  class="rounded2">
+    <ion-label color="#FFFFFF">Date</ion-label>
+    <img src="assets/imgs/signup/calendar.png" item-right height="15px" width="15px" >
+    <ion-datetime  displayFormat="DD/MMMM/YYYY" [(ngModel)]="profile.DOB"></ion-datetime>
+  </ion-item>
+
+  <!-- signup button -->
+  <div class="signupcenter">
+      <button ion-button (click)="register()" class="signupbutton">CREATE ACCOUNT</button>
+  </div>
+  
+
+</ion-content>

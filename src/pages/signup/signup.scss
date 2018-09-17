@@ -1,0 +1,72 @@
+.head{
+    text-align: center;
+ button{
+     color:#fff;
+ }
+}
+
+.myView{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../../assets/imgs/signup/tomatoo.png');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    
+}
+
+.singuph2{
+    font-size: 120%;
+    text-align: center;
+    color: color($colors, major, base);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.rounded2{
+
+    background-color: transparent;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-style: solid;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    .item-inner{
+        border-bottom-color: transparent !important;
+        box-shadow: none !important;
+    }
+    .label {
+        width: 10%;
+        color: color($colors, major, base);
+        // font-size: 1.2em;
+    }
+}
+
+
+// placeholder
+.placeholder{
+
+    ::placeholder{
+        color: color($colors, major, base) !important;
+    }
+
+
+}
+
+
+
+// signup button
+.signupbutton{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    font-size: 120%;
+    display: block;
+}
+
+.signupcenter{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+
